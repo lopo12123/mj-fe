@@ -7,9 +7,6 @@ import { createApp } from "vue";
 // plugin
 import { router } from "@/router";
 
-// view
-import App from "./App.vue";
-
-createApp(App)
+createApp(() => <router-view/>)
     .use(router)
     .mount('#app')
