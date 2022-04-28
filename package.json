@@ -1,9 +1,9 @@
 {
-    "name": "chess",
+    "name": "fe",
     "private": true,
     "version": "0.0.0",
     "scripts": {
-        "dev:chess": "vite --host",
+        "dev:fe": "vite --host",
         "build": "vue-tsc --noEmit && vite build",
         "preview": "vite preview"
     },
