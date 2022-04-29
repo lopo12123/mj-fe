@@ -8,7 +8,8 @@ export default defineConfig({
     plugins: [ vue(), vueJsx() ],
     server: {
         proxy: {
-            '/api': 'http://127.0.0.1:8899'
+            '/api': 'http://127.0.0.1:8899',
+            '/ping': 'http://127.0.0.1:8899'
         }
     },
     resolve: {
