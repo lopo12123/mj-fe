@@ -1,5 +1,5 @@
 import { UseAxios } from "axios-canceller";
 
-const useAxios = new UseAxios()
+const _ = new UseAxios()
 
-export const useAxiosStore = () => useAxios
+export const useAxiosStore = () => _
