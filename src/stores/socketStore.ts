@@ -1,7 +1,10 @@
-class SocketStore {
-    private socket: any
+import { SocketType } from "@/types/io";
 
-    updateSocket(socket: any) {
+class SocketStore {
+    private socket: SocketType | null = null
+
+    updateSocket(socket: SocketType | null) {
+        this.socket?.disconnect()
         this.socket = socket
     }
 
