@@ -7,7 +7,6 @@ const serverUrl = 'http://localhost:8899'
 /**
  * @description 建立ws连接
  */
-
 const setupConnect = (roomId: string) => {
     const socket: SocketType = io(serverUrl, { query: { roomId }, withCredentials: true })
     useSocketStore.updateSocket(socket)
