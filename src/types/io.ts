@@ -62,7 +62,7 @@ interface Server2Client {
  * socket.emit('hello')
  */
 interface Client2Server {
-
+    'request-disconnect': () => void
 }
 
 type SocketType = Socket<Server2Client, Client2Server>
